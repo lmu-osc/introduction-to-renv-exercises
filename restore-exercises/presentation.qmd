@@ -1,0 +1,45 @@
+---
+title: "Billboard 100 Presentation"
+format: html
+editor: visual
+---
+
+
+
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+
+# Billboard 100 Analysis
+
+## Read-in Data
+
+The data needs to be created before running this code! The script to create the data is in the `billboard_100.R` file which can be run easily after you have installed all of the project dependencies! After you have created the data, you can read it in using the following code:
+
+```{r}
+top_billboard_ranking <- readRDS("top_billboard_ranking.rds")
+```
+
+If you have created the data, then try to render this document with the Render button in RStudio to see the analysis!
+
+## Longest Charting Songs
+
+```{r}
+top_billboard_ranking %>%
+  arrange(desc(weeks_in_top_100)) %>%
+  head(10)
+```
+
+## Plot Most Popular Songs by Duration in Top 100
+
+
+```{r}
+top_billboard_ranking %>%
+  ggplot(aes(x = weeks_in_top_100)) +
+  geom_histogram(binwidth = 1) +
+  labs(title = "Distribution of Weeks in Top 100",
+       x = "Weeks in Top 100",
+       y = "Count")
+```
+
