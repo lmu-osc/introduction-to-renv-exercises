@@ -12,6 +12,7 @@
 8. Save these new dependencies to the `renv.lock` file with `renv::snapshot()`.
 9. Commit your changes to your repository, and push them to GitHub.
 
+### Example Code
 
 ``` r
 library(ggplot2)
