@@ -1,5 +1,5 @@
 
-# Instructions
+## Instructions
 
 1. Create an `.Rproj` in this folder, `init-snapshot-exercises`.
 2. Install the {renv} package if needed.

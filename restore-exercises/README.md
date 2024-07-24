@@ -1,6 +1,6 @@
 
 
-# Restoring a Project with {renv}
+## Instructions
 
 1. Open the R project i.e. the `.Rproj` file.
 2. At the console, run the command `renv::dependencies()`. What packages do you see listed as direct dependencies?
