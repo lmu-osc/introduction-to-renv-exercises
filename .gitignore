@@ -61,3 +61,5 @@ _site/
 
 # Project-specific ignores
 restore-exercises/top_billboard_ranking.rds
+restore-exercises/presentation.html
+restore-exercises/presentation_files/

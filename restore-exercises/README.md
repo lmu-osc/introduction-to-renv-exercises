@@ -5,7 +5,6 @@
 1. Open the R project i.e. the `.Rproj` file.
 2. At the console, run the command `renv::dependencies()`.
     - What packages do you see listed as direct dependencies, and what project files depend on which dependency?
-    - Did you receive a notice about the {yaml} package? 
 3. Take a look at the `presentation.qmd` file.
     - Note that {rmarkdown} was listed as a dependency from this file, but there is not actually a call to the package in the file. Why do you think this is?
 4. Run the command `renv::restore()`.
