@@ -58,3 +58,6 @@ rsconnect/
 .httr-oauth
 .quarto
 _site/
+
+# Project-specific ignores
+restore-exercises/top_billboard_ranking.rds
