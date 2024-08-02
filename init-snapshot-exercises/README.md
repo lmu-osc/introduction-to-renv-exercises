@@ -6,12 +6,12 @@
 3. Initialize a new project with {renv} with `renv::init()` (if not already done when creating the `.Rproj`).
 4. Create a new R script in this folder, `init-snapshot-exercises`, called `script.R`.
 5. Write code that uses a variety of different packages.
-  - Try experimenting with calls to `library()` and namespacing functions e.g. `package::function()`. If you're short on time, there's some example code included below. 
+    - Try experimenting with calls to `library()` and namespacing functions e.g. `package::function()`. If you're short on time, there's some example code included below. 
 7. Save the script.
 8. Run the `renv::dependencies()` function to see the new dependencies of your project.
-  - What packages are listed? Is this what you expected?
+    - What packages are listed? Is this what you expected?
 9. Check the status of your project with `renv::status()`.
-  - What do you notice about the results printed to the console?
+    - What do you notice about the results printed to the console?
 8. Save these new dependencies to the `renv.lock` file with `renv::snapshot()`.
 9. (Optional) Commit your changes to your repository, and push them to GitHub.
 
