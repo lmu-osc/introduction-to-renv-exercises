@@ -1,0 +1,16 @@
+---
+title: "Example Analysis"
+format: html
+editor: visual
+---
+
+## Quarto
+
+The analysis below uses the `fa()` function from the `psych` package to perform a factor analysis on the `Holzinger` dataset. The `nfactors` argument specifies the number of factors to extract, `fm` specifies the method of factor extraction, and `rotate` specifies the rotation method.
+
+No worries at all if you're not familiar with factor analysis! For the purposes of this exercise, only {renv}-related issues are important.
+
+```{r}
+library(psych)
+fa(Holzinger, nfactors = 2, fm = "ml", rotate = "promax")
+```
