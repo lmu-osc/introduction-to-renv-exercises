@@ -1,16 +1,28 @@
 ---
-title: "Example Analysis"
+title: "Example of Undeclared Dependency"
 format: html
 editor: visual
 ---
 
-## Quarto
+## Example of Needing {sf} Package from Suggests of {ggplot2}
 
-The analysis below uses the `fa()` function from the `psych` package to perform a factor analysis on the `Holzinger` dataset. The `nfactors` argument specifies the number of factors to extract, `fm` specifies the method of factor extraction, and `rotate` specifies the rotation method.
-
-No worries at all if you're not familiar with factor analysis! For the purposes of this exercise, only {renv}-related issues are important.
+Call in the ggplot2 package 
 
 ```{r}
-library(psych)
-fa(Holzinger, nfactors = 2, fm = "ml", rotate = "promax")
+library(ggplot2)
 ```
+
+Call map data using the map_data() function
+
+```{r}
+(world_map <- map_data("world"))
+```
+
+This will result in an error because the data for these maps is in the {maps} package, which is in the suggests of ggplot2. To fix this, you will need to record the {maps} in your `renv.lock` file.
+
+```{r}
+ggplot(world, aes(x=long, y = lat, group = group)) +
+  geom_polygon() 
+```
+
+
