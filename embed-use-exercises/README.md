@@ -14,7 +14,13 @@ Note that these functions and this approach to recording the packages used in yo
 
 ### Using
 
+#### Inline
+
 1. Open the `use_example.R` file
     - What do you see in the call to `renv::use()`?
 2. Run the whole script
     - What happens?
+
+#### From a `renv.lock File
+
+...
