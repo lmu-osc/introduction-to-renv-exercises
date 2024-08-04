@@ -1,3 +1,4 @@
+## Instructions
 
 1. Open the R project i.e. the `.Rproj` file.
 2. Initiate {renv}} by running `renv::init()`.
