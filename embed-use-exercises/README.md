@@ -10,7 +10,7 @@ Note that these functions and this approach to recording the packages used in yo
     - What dependencies are detected?
     - Does this list include all dependencies on the dependency tree? Why or why not?
 3. Run `renv::embed(file.path("introduction-to-renv-exercises", "embed-use-exercises", "embed_example.R"))` at the console.
-    - What has happened to the `embed_example.R` file?
+    - What has happened to the `embed_example.R` file? Note: you might need to close and then reopen the file to see changes.
 
 ### Using
 
