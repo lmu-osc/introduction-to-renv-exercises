@@ -1,5 +1,6 @@
 ---
 title: "Example of Undeclared Dependency"
+lang: en
 format: html
 editor: visual
 ---
