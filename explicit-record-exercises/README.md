@@ -1,7 +1,7 @@
 ## Instructions
 
 1. Open the R project i.e. the `.Rproj` file.
-2. Initiate {renv}} by running `renv::init()`.
+2. Initiate {renv} by running `renv::init()`.
 3. Check the identified dependencies by running `renv::dependencies()`.
     - What packages are required and why?
 4. Check the status of the dependencies by running `renv::status()`.
