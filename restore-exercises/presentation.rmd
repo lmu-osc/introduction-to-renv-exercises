@@ -1,7 +1,9 @@
 ---
 title: "Billboard 100 Presentation"
-format: html
-editor: visual
+output:
+  html_document:
+    theme:
+      version: 5
 ---
 
 
