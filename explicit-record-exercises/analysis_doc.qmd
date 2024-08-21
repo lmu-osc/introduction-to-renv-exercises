@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-## Example of Needing {sf} Package from Suggests of {ggplot2}
+## Example of Needing {maps} Package from Suggests of {ggplot2}
 
 Call in the ggplot2 package 
 
