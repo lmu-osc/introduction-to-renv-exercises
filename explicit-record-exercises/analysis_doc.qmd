@@ -15,13 +15,13 @@ library(ggplot2)
 Call map data using the map_data() function
 
 ```{r}
-(world_map <- map_data("world"))
+world_map <- map_data("world")
 ```
 
 This will result in an error because the data for these maps is in the {maps} package, which is in the suggests of ggplot2. To fix this, you will need to record the {maps} in your `renv.lock` file.
 
 ```{r}
-ggplot(world, aes(x=long, y = lat, group = group)) +
+ggplot(world_map, aes(x=long, y = lat, group = group)) +
   geom_polygon() 
 ```
 
