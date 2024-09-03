@@ -6,7 +6,7 @@ Restoring a project library from a `renv.lock` file can generally be accomplishe
 1. Open the RStudio `.RProj` file.
 2. Run `renv::restore()`.
 
-The following exercise is intended to guide you through a **more complicated restore situation**, particularly the scenario in which a project dependency has not been added to the `renv.lock` file. This exercise will help you understand how to identify missing dependencies and restore them to a project.
+You could technically complete just these two steps for this exercise, and you would essentially be finished. However, the exercise is designed to help you understand the process of restoring a project library, and to help you see what happens when your project library does not match the required packages laid out in `renv.lock` file.
 
 ## Instructions
 
