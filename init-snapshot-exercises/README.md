@@ -3,7 +3,7 @@
 
 1. Open the R project, `init-snapshot-exercises.Rproj`.
 2. Install the {renv} package if needed.
-3. Initialize a new project with {renv} with `renv::init()` (if not already done when creating the `.Rproj`).
+3. Initialize a new project with {renv} with `renv::init()`.
 4. Create a new R script in this folder, `init-snapshot-exercises`, called `script.R`.
 5. Write code that uses a variety of different packages.
     - Try experimenting with calls to `library()` and namespacing functions e.g. `package::function()`. If you're short on time, there's some example code included below. 
@@ -14,6 +14,7 @@
     - What do you notice about the results printed to the console?
 8. Save these new dependencies to the `renv.lock` file with `renv::snapshot()`.
 9. (Optional) Commit your changes to your repository, and push them to GitHub.
+    - This should include a new `.Rprofile` file, the `renv.lock` file, and some components of the `renv` folder (`renv/.gitignore`, `renv/activate.R`, `renv/settings.json`).
 10. Close the R project.
 
 ### Example Code
