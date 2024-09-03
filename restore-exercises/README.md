@@ -28,14 +28,13 @@ You could technically complete just these two steps for this exercise, and you w
 2. At the console, run the command `renv::dependencies()`. For better formatting, you can run `View(renv::dependencies())`.
     - What packages do you see listed as direct dependencies?
     - The `Source` column indicates which files use these packages. Knowing this, can you list the package dependencies by file?
-    - *Note: some versions of Quarto/RStudio may present you with the following warning message:*
+    - *Note: some versions of Quarto/RStudio may present you with the warning message below.* If this occurs, then install the package, and run `renv::dependencies()` again.
       ``` r
       The 'yaml' package is required to parse dependencies within R Markdown files. Consider installing it with install.packages("yaml")." 
       ```
-    - If this occurs, then install the `yaml` package, and run `renv::dependencies()` again.
-3. Take a look at the `presentation.rmd` file.
-    - {rmarkdown} was listed as a dependency from this file, but there is not actually a call to the package in the file. Why do you think this is?
+3. Open the `presentation.rmd` file.
     - *Note: RStudio may prompt you to install several packages in a yellow highlighted bar. You can ignore this request. A later step will address this.*
+    - {rmarkdown} was listed as a dependency from this file, but there is not actually a call to the package in the file. Why do you think this is?
 4. We want to simulate running someone else's analysis *without* first installing the same packages as them: try to Render[^render] the `presentation.rmd` file.
     - **You will be prompted to install some packages in a pop-up window. This is to install the {rmarkdown} package and its dependencies. Accept the prompt.**
     - The {rmarkdown} package and its dependencies should install, but the rendering still fails. Why do you think this is? Take a careful look at the error message, and align it with the content of the `presentation.rmd` file.
