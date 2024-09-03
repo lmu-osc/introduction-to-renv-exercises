@@ -4,8 +4,6 @@ format: html
 editor: visual
 ---
 
-
-
 ```{r}
 library(dplyr)
 library(ggplot2)
@@ -33,7 +31,6 @@ top_billboard_ranking %>%
 
 ## Plot Most Popular Songs by Duration in Top 100
 
-
 ```{r}
 top_billboard_ranking %>%
   ggplot(aes(x = weeks_in_top_100)) +
@@ -42,4 +39,3 @@ top_billboard_ranking %>%
        x = "Weeks in Top 100",
        y = "Count")
 ```
-
