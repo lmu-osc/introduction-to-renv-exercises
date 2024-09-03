@@ -36,6 +36,7 @@
     - This should create the `top_billboard_rankings.rds` file, needed in the next step.
 7. Try to render the `presentation.rmd` file.
     - What happens?
+8. Close the project `restore-exercises.Rproj`.
     
 Congrats! You have restored someone else's project and successfully rendered their analysis.
 
