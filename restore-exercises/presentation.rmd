@@ -7,13 +7,6 @@ output:
       version: 5
 ---
 
-
-
-```{r}
-library(dplyr)
-library(ggplot2)
-```
-
 # Billboard 100 Analysis
 
 ## Read-in Data
@@ -29,6 +22,8 @@ If you have created the data, then try to render this document with the Render b
 ## Longest Charting Songs
 
 ```{r}
+library(dplyr)
+
 top_billboard_ranking %>%
   arrange(desc(weeks_in_top_100)) %>%
   head(10)
@@ -36,8 +31,9 @@ top_billboard_ranking %>%
 
 ## Plot Most Popular Songs by Duration in Top 100
 
-
 ```{r}
+library(ggplot2)
+
 top_billboard_ranking %>%
   ggplot(aes(x = weeks_in_top_100)) +
   geom_histogram(binwidth = 1) +
@@ -45,4 +41,3 @@ top_billboard_ranking %>%
        x = "Weeks in Top 100",
        y = "Count")
 ```
-
