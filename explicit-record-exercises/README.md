@@ -15,10 +15,10 @@
 8. Install the newly identified dependencies by running `renv::restore()`.
 9. Open the `analysis_doc.qmd` file again, and Render the analysis document.
     - Was it successful this time?
+10. Why did you need to explicitly record one of the packages to be able to render the document?
+    - Take a look at the `DESCRIPTION` file for {ggplot2} to help understand: `packageDescription("ggplot2")`.
 10. Close the `explicit-record-exercises.Rproj` project.
 
-
-Why did you need to explicitly record one of the packages? Take a look at the `DESCRIPTION` file for {ggplot2} to help understand: `packageDescription("ggplot2")`.
 
 
 
