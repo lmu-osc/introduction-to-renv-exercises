@@ -4,7 +4,7 @@
 Restoring a project library from a `renv.lock` file can generally be accomplished in just two steps:
 
 1. Open the RStudio `.RProj` file.
-2. Run `renv::restore()`.
+2. Run `renv::init()`.
 
 You could technically complete just these two steps for this exercise, and you would essentially be finished. However, the exercise is designed to help you understand the process of restoring a project library, and to help you see what happens when your project library does not match the required packages laid out in `renv.lock` file.
 
@@ -38,7 +38,7 @@ You could technically complete just these two steps for this exercise, and you w
 4. We want to simulate running someone else's analysis *without* first installing the same packages as them: try to Render[^render] the `presentation.rmd` file.
     - **You will be prompted to install some packages in a pop-up window. This is to install the {rmarkdown} package and its dependencies. Accept the prompt.**
     - The {rmarkdown} package and its dependencies should install, but the rendering still fails. Why do you think this is? Take a careful look at the error message, and align it with the content of the `presentation.rmd` file.
-5. We will now need to install all R packages required for this exercise. Run the command `renv::restore()`.
+5. We will now need to install all R packages required for this exercise. Run the command `renv::init()`.
     - What happens?
     - If prompted with the question "Do you want to proceed? [Y/n]: ", type `Y` and press `Enter`."
 6. Open the `billboard_100.R` file, and run the code by pressing the `Source` button near the top right hand corner of the script.
