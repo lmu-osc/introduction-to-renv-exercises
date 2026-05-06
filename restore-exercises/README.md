@@ -10,7 +10,7 @@ You could technically complete just these two steps for this exercise, and you w
 
 ## Instructions
 
-**IMPORTANT**: This exercise expects you have version 4.4.X of R installed. If you have a different version, please install the correct version before starting the exercise. **Step 5 will most likely fail if you have an older version of R installed. You can still read along, and then watch the solution video.**
+**IMPORTANT**: This exercise expects you have version 4.5.X of R installed. If you have a different version, please install the correct version before starting the exercise. **Step 5 will most likely fail if you have an older version of R installed. You can still read along, and then watch the solution video.**
 
 1. Open the `restore-exercises.Rproj` file.
     - Upon opening, you should be greeted with a message similar to this: 
@@ -19,7 +19,7 @@ You could technically complete just these two steps for this exercise, and you w
       - Downloading renv ... OK
       - Installing renv  ... OK
       
-      - Project '~/Desktop/introduction-to-renv-exercises/restore-exercises' loaded. [renv 1.0.7]
+      - Project '~/Desktop/introduction-to-renv-exercises/restore-exercises' loaded. [renv 1.2.2]
       - One or more packages recorded in the lockfile are not installed.
       - Use `renv::status()` for more details.
       ```
